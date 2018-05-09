@@ -1,0 +1,23 @@
+<div class="btn-container">
+  <button (click)="goBack()" class="btn btn-primary">Back to Search</button>
+</div>
+<div *ngIf="page==0; else elseBlock" class="results-container">
+  <app-search-result
+    *ngFor="let result of results"
+    [url]="result.show.url"
+    [imgurl]="result.show.image ? result.show.image.medium : ''"
+    [name]="result.show.name"
+    [summary]="result.show.summary"
+  ></app-search-result>
+</div>
+<ng-template #elseBlock>
+  <div class="results-container">
+    <app-search-result
+    *ngFor="let result of results"
+    [url]="result.url"
+    [imgurl]="result.image ? result.image.medium : ''"
+    [name]="result.name"
+    [summary]="result.summary"
+  ></app-search-result>
+  </div>
+</ng-template>
