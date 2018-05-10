@@ -7,3 +7,7 @@ At this scale, it is likely that React offers a quicker time to live, and a bett
 # Installation and Running
 
 Simply git clone this repo, run 'npm install', and then 'ng serve' to start the server.
+
+# Other Versions
+- [TVMaze-React](https://github.com/CKKOK/tvmaze-react)
+- [TVMaze-Vue](https://github.com/CKKOK/tvmaze-vue)
